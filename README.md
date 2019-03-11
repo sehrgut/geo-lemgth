@@ -29,6 +29,10 @@ The bounding box defined by minimum and maximum latitude and longitude is taken 
 
 * A visualisation layer, or at least GeoJSON export of computed hulls and lines
 
+## Known Issues
+
+* MultiPolygon features are not correctly handled. This results incorrect output, such as an aspect ratio of 39.62 for Alaska using the bounding box metric.
+
 ## Sources
 
 * [GeoJSON and KML Data for the United States](http://eric.clst.org/tech/usgeojson/)
