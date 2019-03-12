@@ -11,7 +11,7 @@ log.setLevel("info");
 
 var states = require('../data/gz_2010_us_040_00_20m.json');
 
-console.log("\n\n## Hull Aspect Ratio");
+console.log("## Hull Aspect Ratio");
 turf.featureEach(states, x => lemgth(x, lemgth.Metrics.HULL_DIAMETER_AREA));
 states.features.sort((a, b) => b.properties.AR_ASPECTRATIO - a.properties.AR_ASPECTRATIO);
 
